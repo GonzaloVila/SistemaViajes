@@ -1,16 +1,13 @@
 public class Colectivo extends Vehiculo{
-    String patente;
-    int capacidad;
-    Arraylist <Viaje> ListaViajes;
     boolean pisoDoble;
 
     public Colectivo(){
-        this.super(patente, nombre, ListaViajes);
-        this.pisoDoble = ;
+        this.pisoDoble = true;
+    
     }
-
-    public Colectivo(String patente, int capacidad, List<Viaje> ListaViajes, boolean pisoDoble){
-        this.super(patente, nombre, ListaViajes);
+    
+    public Colectivo(String patente, int capacidad, ArrayList<Viaje> ListaViajes, boolean pisoDoble){
+        super(patente,capacidad, ListaViajes);
         this.pisoDoble = pisoDoble;
     }
 

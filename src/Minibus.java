@@ -1,14 +1,17 @@
-public class Minibus extends Vehiculo{
-    String patente;
-    int capacidad;
-    ArrayList<Viaje> ListaViaje;
+import java.util.ArrayList;
+
+public class Minibus extends Vehiculo {
     boolean tieneBodega;
-    boolean AireAcondicionado;
+    boolean aireAcondicionado;
 
-    public Colectivo(){
-        this.super(patente, capacidad, ListaViajes);
+    public Minibus() {
+        this.tieneBodega = false;
+        this.aireAcondicionado = false;
+    }
+
+    public Minibus(boolean tieneBodega, boolean aireAcondicionado, String patente, int capacidad, ArrayList<Viaje> listaViajes) {
+        super(patente, capacidad, listaViajes);
         this.tieneBodega = tieneBodega;
-        this.AireAcondicionado = AireAcondicionado;
-
+        this.aireAcondicionado = aireAcondicionado;
     }
 }
