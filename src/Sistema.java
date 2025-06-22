@@ -89,5 +89,21 @@ public class Sistema {
         System.out.println("No se encontró un colectivo con la patente: " + patente);
     }
 
+    public void informeViajesPorChoferDeColectivo() {
+        for (Chofer c : choferes) {
+            int contador = 0;
+            for (Viaje v : c.getViajes()) {
+                if (v.getVehiculo() instanceof Colectivo) {
+                    contador++;
+                }
+            }
+
+            if (contador > 0) {
+                System.out.println("Chofer " + c.getNombre() + " " + c.getApellido() +
+                        " realizó " + contador + " viajes en colectivos.");
+            }
+        }
+    }
+
 
 }

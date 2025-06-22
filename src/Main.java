@@ -46,5 +46,9 @@ public class Main {
         // Informe de viajes por colectivo
         System.out.println("\n--- Informe de viajes del colectivo ABC123 ---");
         sistema.informeViajesPorColectivo("ABC123");
+
+        //  Informe de cantidad de viajes por chofer de colectvo
+        System.out.println("\n--- Informe de viajes por chofer de colectivo ---");
+        sistema.informeViajesPorChoferDeColectivo();
     }
 }
